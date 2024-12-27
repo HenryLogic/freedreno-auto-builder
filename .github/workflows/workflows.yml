@@ -1,4 +1,4 @@
-name: Android CI
+name: 23.2.0
 
 on:
   workflow_dispatch:
