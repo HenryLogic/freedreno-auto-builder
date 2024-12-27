@@ -23,7 +23,7 @@ jobs:
       - name: Set ndkver,sdkver and work_dir
         run: |
           echo "NDK_VER=android-ndk-r27c" >> $GITHUB_ENV
-          echo "SDK_VER=29" >> $GITHUB_ENV
+          echo "SDK_VER=28" >> $GITHUB_ENV
           echo "WORK_DIR=$(pwd)" >> $GITHUB_ENV
       - name: Download and extract NDK
         run: |
@@ -41,7 +41,7 @@ jobs:
             -Dbuildtype=release \
             --prefix=/tmp/mesa \
             -Dplatforms=android \
-            -Dplatform-sdk-version=29 \
+            -Dplatform-sdk-version=33 \
             -Dandroid-stub=true \
             -Dgallium-drivers= \
             -Dvulkan-drivers=freedreno \
