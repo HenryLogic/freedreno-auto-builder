@@ -46,7 +46,6 @@ jobs:
             -Dgallium-drivers= \
             -Dvulkan-drivers=freedreno \
             -Dfreedreno-kmds=kgsl \
-            -Dandroid-strict=false \
             -Db_lto=true
           ninja -C "build-android" install
           mkdir /tmp/mesa/turnip
