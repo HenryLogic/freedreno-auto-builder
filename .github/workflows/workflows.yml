@@ -41,11 +41,12 @@ jobs:
             -Dbuildtype=release \
             --prefix=/tmp/mesa \
             -Dplatforms=android \
-            -Dplatform-sdk-version=28 \
+            -Dplatform-sdk-version=33 \
             -Dandroid-stub=true \
             -Dgallium-drivers= \
             -Dvulkan-drivers=freedreno \
             -Dfreedreno-kmds=kgsl \
+            -Dandroid-strict=false \
             -Db_lto=true
           ninja -C "build-android" install
           mkdir /tmp/mesa/turnip
